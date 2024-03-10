@@ -1,0 +1,106 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+
+
+body {
+    background-color: #010101;
+    color: #f0ece2;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: .3125rem;
+}
+
+li {
+    font-size: 0.625rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+}
+
+.pokemonImg {
+    overflow: auto;
+    position: relative;
+}
+
+
+#headerContent {
+    display: flex;
+    justify-content: center;
+}
+
+
+.banner h1 {
+    font-family: 'Pokemon Solid', sans-serif;
+    font-weight: 400;
+}
+
+#mainContent {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+}
+
+#pokemonDetails {
+    background: white;
+    color: black;
+    border-radius: 12px;
+    flex: 1;
+    width: 100%;
+    max-width: 130px;
+    min-width: 100px;
+    height: 100%;
+    align-self: center;
+}
+
+#pokemonStats {
+    display: none;
+    width: max-content;
+    background-color: aqua;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.statValue {
+    text-align: center;
+    flex: 1;
+    width: 6rem;
+}
+
+.statName {
+    text-align: right;
+}
+
+#pokemonAbilites {
+    display: none;
+    width: auto;
+    background-color: aqua;
+    border-radius: 12px;
+    text-align: center;
+}
+
+
+
+.container:hover #pokemonStats {
+    display: block;
+}
+
+.container:hover #pokemonAbilites {
+    display: block;
+}
+
+
+
+
